@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import SocialPill from '../components/SocialPill.astro';
+import GitHubIcon from '../components/icons/GitHub..astro'
+import MailIcon from '../components/icons/Mail.astro'
+import Experience from '../components/Experience.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout title="Portfolio de babino - desarollador y programador web" 
+description="Contrata a Ibrahim Zanko para crear tu aplicación web o móvil. Desarollador Web FrontEnd. Especializado en crear webs ÚNICAS"
+>
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-32">
+			<img class="rounded-full size-12 mb-4" src="https://scontent.fqsa1-1.fna.fbcdn.net/v/t1.6435-9/171446510_2982265725336393_3835198388162243359_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=53a332&_nc_ohc=kV6fSFOBOLQQ7kNvgEePJIW&_nc_ht=scontent.fqsa1-1.fna&_nc_gid=AiM1aqROzXvCEDtCSZKO7hb&oh=00_AYCHVSECFl9TAM4R9EhA2GTA_vhonuHCaI4xhk1nafLarw&oe=6735177A" alt="babino photo" />
+
+		<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">Hey, soy ibrahim <a 
+			href="https://www.linkedin.com/in/ibraim-zanko-5b7327260"
+			target="_blank" 
+			rel="noopener" 
+			class="flex justify-center items-center">
+			<Badge>Disponible para trabajar</Badge>
+		</a>
+	</h1>
+		<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+			<span class="text-sky-400/80">+1 año de Experiencia.</span>
+			<span class=" text-yellow-200/90"> Desarollador Web FrontEnd.</span> 
+			<span class="opacity-80"> De Barcelona, España 🇪🇸.</span> 
+			<span class="opacity-75">Especializado en Crear Webs ÚNICAS</span>
+		</h2>
+	
+			
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/ibraim-zanko-5b7327260">
+					<LinkedInIcon class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/IbrahimZanko">
+					<GitHubIcon class="size-4 md:size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:ibrahimzanko@icloud.com">
+					<MailIcon class="size-4 md:size-6" />
+					ibrahimzanko@icloud.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+
+	<SectionContainer id="experiencia">
+		<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+			<Briefcase class="size-7"/>
+			Experiencia Laboral
+		</h2>
+		<Experience />
+	</SectionContainer>
+
+	<SectionContainer id="proyectos">
+		<h2 class="text-3xl font-semibold mb-10 flex gap-x-3 items-center">
+			<CodeIcon class="size-7"/>
+			Proyectos
+		</h2>
+		<Projects />
+	</SectionContainer>
+	</main>
+</Layout>
+
